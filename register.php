@@ -56,5 +56,3 @@ else
 // {
 // 	echo "Error.Please try again";
 // }
-
-?>

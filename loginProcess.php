@@ -16,7 +16,7 @@ if(isset($_POST['save']))
     }
     else
     {
-        echo "Invalid Email ID/Password";
+        header("Location: login.php?status=failed"); 
+        // echo "Invalid Email ID/Password";
     }
 }
-?>
