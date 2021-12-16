@@ -36,7 +36,7 @@
           <li>Create a user profile page and show data for the relevant user from the database.</li>
           <li>Add user profile image in a database.</li>
           <li>Display user details from database in divs.</li>
-          <li>Session, mysql queries, mysql blobs are demonstarted in this tutorial.</li>
+          <li>Session, mysql queries, mysql blobs are demonstrated in this tutorial.</li>
         </ol>
       </div>
     </div>
