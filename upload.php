@@ -20,8 +20,23 @@ if (isset($_POST["submit"])) {
             $imgData = addslashes(file_get_contents($image));
 
             // Insert image content into database 
-            $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
-            $insert = mysqli_query($conn, $sql);
+            $sqlc=mysqli_query($conn,"SELECT * FROM ppimages where email='$email'");
+            if(mysqli_num_rows($sqlc)>0)
+            {   $sqld = "DELETE from ppimages WHERE email = '$email'";
+                $del = mysqli_query($conn, $sqld);
+                // $sqlu = "UPDATE ppimages SET images='{$imgData}',created_at=NOW() WHERE email='{$email}'";
+                // $update = mysqli_query($conn, $sql);
+                $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
+                $insert = mysqli_query($conn, $sql);
+            }
+            else
+            {
+                $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
+                $insert = mysqli_query($conn, $sql);
+            }
+
+            // $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
+            // $insert = mysqli_query($conn, $sql);
 
             if ($insert) {
                 header("Location: home.php?status=success");

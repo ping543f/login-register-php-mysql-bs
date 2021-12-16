@@ -1,4 +1,5 @@
-.clearfix{
+.clearfixz{
     clear:both;
-    margin-top: 100px;
+    height: 10px;
+    width: 100%;
 }
