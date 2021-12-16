@@ -38,6 +38,9 @@
       <li class="nav-item">
         <a class="nav-link" href="login.php">Login / Signin</a>
       </li>
+      <li class="nav-item">
+                <a class="nav-link" href="codes.php">Code Examples</a>
+            </li>
     </ul>
   </nav>
   <div class="jumbotron jumbotron-fluid">

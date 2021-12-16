@@ -24,9 +24,10 @@ if (isset($_GET['status'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration page example</title>
 <!--online source-->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <title>Registration page example</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -55,6 +56,9 @@ if (isset($_GET['status'])) {
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="login.php">Login / Signin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="codes.php">Code Examples</a>
             </li>
         </ul>
     </nav>

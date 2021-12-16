@@ -69,6 +69,9 @@ if (isset($_GET['status'])) {
             <li class="nav-item">
                 <a class="nav-link" href="logout.php">Logout</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="codes.php">Code Examples</a>
+            </li>
             <!-- <li class="nav-item">
       <a class="nav-link" href="login.php">Login / Signin</a>
     </li> -->
