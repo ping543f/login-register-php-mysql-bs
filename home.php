@@ -77,7 +77,7 @@ if (isset($_GET['status'])) {
     </li> -->
         </ul>
     </nav>
-
+    <div class="clearfixz"></div>
     <div class="container-fluid">
 
         <div class="row">
