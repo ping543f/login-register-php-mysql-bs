@@ -24,8 +24,6 @@ if (isset($_POST["submit"])) {
             if(mysqli_num_rows($sqlc)>0)
             {   $sqld = "DELETE from ppimages WHERE email = '$email'";
                 $del = mysqli_query($conn, $sqld);
-                // $sqlu = "UPDATE ppimages SET images='{$imgData}',created_at=NOW() WHERE email='{$email}'";
-                // $update = mysqli_query($conn, $sql);
                 $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
                 $insert = mysqli_query($conn, $sql);
             }
