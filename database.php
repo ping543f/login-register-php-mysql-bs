@@ -7,4 +7,3 @@
     if(!$conn){
         die('Could not Connect to Database. Following error occured:' .mysql_error());
     }
-?>
