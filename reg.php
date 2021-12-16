@@ -2,19 +2,22 @@
     if (isset($_GET['status']))
     {   if($_GET['status']=='eae')
         {
-        echo '<div class="alert alert-danger">
+        echo '<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Email aready exists!</strong>
         </div>';
         }
         else if ($_GET['status']=='failed')
         {
-        echo '<div class="alert alert-danger">
+        echo '<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Registration failed ! Please try again</strong>
         </div>';
         }
         else if($_GET['status']=='mismatch')
         {
-        echo '<div class="alert alert-danger">
+        echo '<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Password mismatch ! Please try again</strong>
         </div>';
         }

@@ -25,14 +25,16 @@
     {
         if($_GET['status']=='success')
         {
-            echo '<div class="alert alert-success">
+            echo '<div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Registration Successful ! You can login now.</strong>
             </div>';
         }
         
     }
     else{
-        echo '<div class="alert alert-warning">
+        echo '<div class="alert alert-warning alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
         If you are not registered, please register first.
         </div>';
     }
