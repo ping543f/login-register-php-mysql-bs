@@ -45,9 +45,12 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Weather info</h5>
-
-        <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/pekan-57356"><img src="https://w.bookcdn.com/weather/picture/31_57356_1_1_c55a99_250_bf428c_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=80729"  alt="booked.net"/></a><!-- weather widget end -->
+        <h5 class="text-uppercase">Video embed </h5>
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/Utbk6AfKabs">
+        </iframe>
+        <!-- weather widget start -->
+        <!-- <a target="_blank" href="https://www.booked.net/weather/pekan-57356"><img src="https://w.bookcdn.com/weather/picture/31_57356_1_1_c55a99_250_bf428c_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=80729"  alt="booked.net"/></a> -->
+        <!-- weather widget end -->
       </div>
       <!-- Grid column -->
 

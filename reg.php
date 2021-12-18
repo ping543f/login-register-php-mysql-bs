@@ -52,7 +52,7 @@ if (isset($_GET['status'])) {
         <a class="navbar-brand" href="index.php">Home</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="reg.php">Register / Signup </a>
+                <a class="nav-link active" href="reg.php">Register / Signup </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="login.php">Login / Signin</a>

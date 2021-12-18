@@ -55,7 +55,7 @@ If you are not registered, please register first.
                 <a class="nav-link" href="reg.php">Register / Signup </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.php">Login / Signin</a>
+                <a class="nav-link active" href="login.php">Login / Signin</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="codes.php">Code Examples</a>
