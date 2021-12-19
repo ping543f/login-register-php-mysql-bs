@@ -20,3 +20,4 @@ if(isset($_POST['save']))
         // echo "Invalid Email ID/Password";
     }
 }
+mysqli_close($conn);

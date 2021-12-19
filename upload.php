@@ -20,15 +20,13 @@ if (isset($_POST["submit"])) {
             $imgData = addslashes(file_get_contents($image));
 
             // Insert image content into database 
-            $sqlc=mysqli_query($conn,"SELECT * FROM ppimages where email='$email'");
-            if(mysqli_num_rows($sqlc)>0)
-            {   $sqld = "DELETE from ppimages WHERE email = '$email'";
+            $sqlc = mysqli_query($conn, "SELECT * FROM ppimages where email='$email'");
+            if (mysqli_num_rows($sqlc) > 0) {
+                $sqld = "DELETE from ppimages WHERE email = '$email'";
                 $del = mysqli_query($conn, $sqld);
                 $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
                 $insert = mysqli_query($conn, $sql);
-            }
-            else
-            {
+            } else {
                 $sql = "INSERT into ppimages (email,images) VALUES ('$email','{$imgData}')";
                 $insert = mysqli_query($conn, $sql);
             }
@@ -52,7 +50,8 @@ if (isset($_POST["submit"])) {
         // $statusMsg = 'Please select an image file to upload.'; 
         header("Location: home.php?status=blank");
     }
-} 
+}
+mysqli_close($conn);
  
 // Display status message 
 // echo $statusMsg; 
